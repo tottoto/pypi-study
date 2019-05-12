@@ -13,3 +13,7 @@ autopep8 = "*"
 
 [requires]
 python_version = "3.7"
+
+[scripts]
+build_release = "python setup.py sdist bdist_wheel"
+upload_release = "twine upload --repository testpypi dist/*"
